@@ -92,5 +92,5 @@ module.exports = docs;`;
 
   const definitions = {};
 
-  module.exports = { tags, paths, definitions };`
+  module.exports = { tags, paths, definitions };`,
 };
