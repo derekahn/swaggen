@@ -1,0 +1,22 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "plugin:node/recommended",
+    "plugin:security/recommended",
+    "prettier"
+  ],
+  "env": {
+    "node": true,
+    "es6": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 2018
+  },
+  "root": true,
+  "rules": {
+    "node/exports-style": ["error", "module.exports"],
+    "linebreak-style": ["error", "unix"],
+    "quotes": ["error", "single"]
+  },
+  "plugins": ["node", "prettier", "security"]
+}
