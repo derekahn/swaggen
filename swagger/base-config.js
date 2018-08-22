@@ -5,7 +5,7 @@ module.exports = {
     title: 'Fancy API',
     description: 'Describing a descriptive description.',
   },
-  host: 'http://localhost:8080',
+  host: 'localhost:8080',
   basePath: '/',
   schemes: ['http'],
   consumes: ['application/json'],
