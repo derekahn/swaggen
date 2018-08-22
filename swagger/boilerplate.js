@@ -7,7 +7,7 @@ module.exports = {
   recursive: false,
 });
 
-const BASE_PATH = '/${route}';
+const BASE_PATH = '${route}';
 
 const format = (paths = {}, basePath = '') =>
   Object.keys(paths).reduce((obj, key) => {
