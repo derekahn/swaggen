@@ -46,7 +46,7 @@ if (!target) {
         await write(`${docsDir}/${file}`, doc);
       });
 
-    await write(`${docsDir}/_index.js`, entry(target));
+    await write(`${docsDir}/_index.js`, entry(''));
   } catch (err) {
     throw err;
   }
