@@ -1,0 +1,16 @@
+{
+  "name": "example-app",
+  "version": "1.0.0",
+  "description": "Just an example express server to showcase swaggen",
+  "main": "index.js",
+  "repository": "https://github.com/derekahn/swaggen/example/",
+  "author": "Derek Ahn <git.derek@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.16.3",
+    "swagger-ui-express": "^3.0.10"
+  }
+}
