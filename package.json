@@ -10,6 +10,9 @@
   "engines": {
     "node": ">= 8.11.1"
   },
+  "scripts": {
+    "docs": "node ./swagger/generator.js"
+  },
   "dependencies": {
     "mkdirp": "^0.5.1",
     "require-all": "^3.0.0",
