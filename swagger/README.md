@@ -12,14 +12,3 @@ Implementation of [swagger](https://swagger.io). In each route directory, a nest
 ├── base-config.js     // things that don't change often
 ├── generator.js       // code-generator that creates the boilerplate and setup
 └── index.js           // entry point; imports and merges all route documentations
-```
-
-## Usage:
-
-```shell
-$ yarn docs routePath=path
-
-$ yarn test:docs
-
-$ yarn start
-```

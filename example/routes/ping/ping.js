@@ -1,7 +1,11 @@
-const router = require( 'express' ).Router();
+const router = require('express').Router();
 
 router.get('/', (request, reply) => {
-  reply.send('Hello 🌎');
+  reply.json({
+    foo: 'Aloha 🤙🏽',
+    bar: 21,
+    baz: false,
+  });
 });
 
 module.exports = router;
