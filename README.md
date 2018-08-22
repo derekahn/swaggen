@@ -54,15 +54,19 @@ module.exports = { tags, paths, definitions };
 ## Usage:
 
 ```shell
-$ yarn docs routePath=path
+$ yarn; cd example && yarn;
 
-$ yarn test:docs
+# in root of swaggen/
+$ yarn docs route=example/routes/ping
 
 # copy the example config above ☝
 $ vim example/routes/ping/docs/ping.doc.js
 
-$ yarn start
+# start example app and go to localhost:8080/swagger
+$ cd example/ && yarn start
+
 ```
 
 ## TODO
+* [ ]  convert to NPM 📦
 
