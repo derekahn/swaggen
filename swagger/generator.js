@@ -23,7 +23,7 @@ if (!target) {
 
 (async () => {
   try {
-    const basePath = `${process.cwd()}/routes/${target}`;
+    const basePath = `${process.cwd()}/${target}`;
     const docsDir = `${basePath}/docs`;
 
     await mkdirp(docsDir);
