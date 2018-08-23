@@ -1,19 +1,13 @@
 const { promisify } = require('util');
 
 const mkdirp = promisify(require('mkdirp'));
-const write = promisify(require('fs').writeFile);
+const writeFile = promisify(require('fs').writeFile);
 
 const { doc, entry } = require('./boilerplate');
 
 const target = process.argv
-  .map(arg => {
-    if (arg.includes('route')) {
-      return arg
-        .split('=')
-        .pop()
-        .trim();
-    }
-  })
+  .filter( arg => arg.includes( 'route' ) )
+  .map( arg => arg.split( '=' ).pop().trim() )
   .pop();
 
 if (!target) {
@@ -43,10 +37,10 @@ if (!target) {
     Object.keys(files)
       .map(name => `${name.split('.js')[0]}.doc.js`)
       .forEach(async file => {
-        await write(`${docsDir}/${file}`, doc);
+        await writeFile(`${docsDir}/${file}`, doc);
       });
 
-    await write(`${docsDir}/_index.js`, entry(''));
+    await writeFile(`${docsDir}/_index.js`, entry(''));
   } catch (err) {
     throw err;
   }
